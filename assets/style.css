@@ -1,0 +1,29 @@
+/* index styles */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
+  padding: 10px 20px;
+  background: #635985;
+  color: #fff;
+  height: 150px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.user-card {
+  position: absolute;
+  top: 80px;
+  left: 490px;
+  width: 385px;
+  height: 150px;
+  background: #fff;
+}
+
+.user-card img {
+  margin-top: 15px;
+  width: 20%;
+  border-radius: 50%;
+}
+/* index styles */
