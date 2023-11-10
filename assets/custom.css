@@ -46,6 +46,48 @@ body {
 }
 /* nav styles */
 
+/* sidebar styles */
+.offcanvas {
+  background-color: var(--container-color);
+  color: #fff8ea;
+}
+.offcanvas h5 {
+  font-family: 'Alumni Sans Inline One', sans-serif;
+  font-size: 2.5em;
+}
+
+.offcanvas .btn-close {
+  background-color: #fff8ea;
+}
+.user-profile {
+  display: flex;
+}
+
+.user-profile img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.menu-item {
+  border-radius: 5px;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #ed5ab3;
+  box-shadow: #ed5ab3 0px 3px 8px;
+}
+
+.menu-item i {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff8ea;
+}
+/* sidebar styles */
+
 /* index styles */
 .header-section {
   display: flex;
