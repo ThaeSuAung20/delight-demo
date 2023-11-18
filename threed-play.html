@@ -25,6 +25,19 @@
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Inter&family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <style>
+      #output {
+        display: flex;
+      }
+      .output {
+        border: 1px solid #2f75c5;
+        border-radius: 3px;
+        background: #0a2647;
+        color: #fff;
+        padding: 10px;
+        margin: 10px 5px 5px 5px;
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -42,25 +55,11 @@
 
       <!--sub-nav section  -->
       <div class="row" style="margin-top: 80px">
-        <div class="col-lg-5 twod-nav py-4 mt-3 mb-2 mx-auto">
-          <div class="d-flex justify-content-between text-dark px-3">
-            <div class="">
-              <a href="2d-winner.html">
-                <i class="fa-solid fa-clock-rotate-left d-block"></i>
-                <span class="d-block">မှတ်တမ်း</span>
-              </a>
-            </div>
-            <div class="">
-              <a href="2d-winner.html">
-                <i class="fa-solid fa-trophy"></i>
-                <span class="d-block">ကံထူးရှင်များ</span>
-              </a>
-            </div>
-            <div class="">
-              <i class="fa-solid fa-calendar-days d-block"></i>
-              <span class="d-block">ပိတ်ရက်</span>
-            </div>
-          </div>
+        <div class="col-lg-5 sub-nav mx-auto">
+          <a href="index.html" class="d-flex"
+            ><i class="fa-solid fa-arrow-left mt-2 ps-2 pe-3"></i>
+            <h5 class="mt-1">3D</h5></a
+          >
         </div>
       </div>
       <!-- sub-nav section -->
@@ -115,77 +114,117 @@
       <!-- sidebar -->
 
       <!-- content section -->
-      <div class="row">
+      <div class="row" style="height: 100vh">
         <div
           class="col-lg-5 mx-auto"
-          style="
-            background: #2c74b3;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-          "
+          style="height: 100vh; background: #2c74b3; padding-bottom: 800px"
         >
-          <div class="d-flex justify-content-between">
-            <div>
-              <div class="d-flex">
-                <i class="fa-solid fa-wallet fs-2 d-block normal-icon"></i>
+          <div class="threed-play">
+            <div class="d-flex justify-content-between mt-3">
+              <div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-wallet fs-2 d-block normal-icon"></i>
+                  <div>
+                    <p class="mt-2 px-2">
+                      လက်ကျန်ငွေ <br /><span>0.00 Kyat</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-2 d-flex text-center">
+                <i class="fa-solid fa-hourglass-start fs-2 pe-2"></i>
                 <div>
-                  <p class="mt-2 px-2">
-                    လက်ကျန်ငွေ <br /><span>0.00 Kyat</span>
-                  </p>
+                  <span> ပိတ်ရန်ကျန်ချိန်</span>
+                  <p>2023-11-16 <br /><span>02:30:00PM</span></p>
                 </div>
               </div>
             </div>
 
-            <div class="mt-2 d-flex text-center">
-              <i class="fa-solid fa-hourglass-start fs-2 pe-2"></i>
-              <div>
-                <span> ပိတ်ရန်ကျန်ချိန်</span>
-                <p>2023-11-16 <br /><span>02:30:00PM</span></p>
+            <div class="form-group px-5 py-3">
+              <input
+                type="number"
+                class="form-control"
+                style="height: 50px"
+                placeholder="ငွေပမာဏ အနည်းဆုံး (၁၀၀)ကျပ်"
+                name=""
+              />
+            </div>
+            <div class="form-group px-5 py-3">
+              <input
+                type="number"
+                class="form-control"
+                style="height: 50px"
+                placeholder="စာရိုက်ပြီး ဂဏန်းရွေးမည်"
+                name=""
+                id="additionalInput"
+              />
+            </div>
+            <h6 class="text-center mb-2 py-3" style="color: #fff">
+              ဂဏန်းရွေးမည်
+            </h6>
+            <div class="container px-5">
+              <div class="row">
+                <div class="col-4">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      class="form-control threed-digit"
+                      placeholder="ရှေ့"
+                      min="0"
+                      max="9"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      class="form-control threed-digit"
+                      placeholder="လယ်"
+                      min="0"
+                      max="9"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      class="form-control threed-digit"
+                      placeholder="နောက်"
+                      min="0"
+                      max="9"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="text-center px-5 py-4">
+                <a
+                  type="button"
+                  onclick="chooseNumber()"
+                  class="btn threeplay-btn"
+                  >ရွေးမည်</a
+                >
+              </div>
+              <div class="container">
+                <div id="output"></div>
               </div>
             </div>
-          </div>
-          <div class="result-section pb-3">
-            <span>73</span>
-            <p>Updated: 09-11-2023 4:30:00 PM</p>
-            <a
-              href=""
-              class="btn twod-play-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#modalForm"
-              >ထိုးမည်</a
-            >
-          </div>
-          <div class="result-card">
-            <!-- <div> -->
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
+            <div class="row py-5">
+              <div class="col-6 text-center mb-4">
+                <button
+                  type="button"
+                  onclick="removeNumber()"
+                  class="btn btn-remove"
+                >
+                  ဖျက်မည်
+                </button>
+              </div>
+              <div class="col-6 text-center">
+                <a href="threed-confirm.html" class="btn btn-play">ထိုးမည်</a>
+              </div>
             </div>
-            <hr />
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
-            </div>
-            <hr />
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
-            </div>
-            <hr />
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
-            </div>
-            <hr />
-            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -224,7 +263,7 @@
               </a>
             </div>
             <div class="text-center">
-              <a href="contact.html" class="text-decoration-none footer-nav">
+              <a href="profile.html" class="text-decoration-none footer-nav">
                 <!-- <div class="footer-circle"> -->
                 <i class="fa-solid fa-phone d-block normal-icon"></i>
                 <!-- </div> -->
@@ -249,51 +288,6 @@
         </div>
       </footer>
       <!-- footer section -->
-
-      <!-- model  -->
-      <div
-        class="modal fade"
-        id="modalForm"
-        tabindex="-1"
-        aria-labelledby="modalFormLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title text-center" id="modalFormLabel">
-                Choose Section to play
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="time-section">
-                  <a href="twoD-play.html">10:00 AM</a>
-                </div>
-                <div class="time-section">
-                  <a href="twoD-play.html">10:00 AM</a>
-                </div>
-                <div class="time-section">
-                  <a href="twoD-play.html">10:00 AM</a>
-                </div>
-                <div class="time-section">
-                  <a href="twoD-play.html">10:00 AM</a>
-                </div>
-                <!-- <div class="submit-btn">
-                  <a href="twoD-play.html">Play</a>
-                </div> -->
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- model -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -305,5 +299,37 @@
       src="https://kit.fontawesome.com/b829c5162c.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function chooseNumber() {
+        const inputs = document.querySelectorAll('.threed-digit');
+        const additionalInput = document.getElementById('additionalInput');
+        const output = document.getElementById('output');
+        const additionalValue = additionalInput.value;
+        console.log(additionalValue);
+        const values = Array.from(inputs).map((input) => input.value);
+
+        if (additionalValue) {
+          const result = document.createElement('div');
+          result.classList.add('output');
+          result.textContent = `${additionalValue}`;
+          output.appendChild(result);
+        } else {
+          const result = document.createElement('div');
+          result.classList.add('output');
+          result.textContent = `${values.join('')}`;
+          output.appendChild(result);
+        }
+        inputs.forEach((input) => (input.value = ''));
+        additionalInput.value = '';
+      }
+
+      function removeNumber() {
+        const output = document.getElementById('output');
+        while (output.firstChild) {
+          output.removeChild(output.firstChild);
+        }
+      }
+    </script>
   </body>
 </html>

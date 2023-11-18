@@ -28,8 +28,9 @@
   </head>
   <body>
     <div class="container-fluid">
+      <!-- nav section -->
       <div class="row">
-        <div class="col-lg-5 fixed-top mx-auto nav-section" id="">
+        <div class="col-lg-5 mx-auto fixed-top nav-section" id="">
           <h5 class="">Delight 2D | 3D</h5>
           <div class="mt-2">
             <button class="btn btn-success">Register</button>
@@ -37,6 +38,19 @@
           </div>
         </div>
       </div>
+      <!-- nav section -->
+
+      <!--sub-nav section  -->
+      <div class="row" style="margin-top: 80px">
+        <div class="col-lg-5 sub-nav mx-auto">
+          <a href="threed-play.html" class="d-flex"
+            ><i class="fa-solid fa-arrow-left mt-2 ps-2 pe-3"></i>
+            <h5 class="mt-1">3D</h5></a
+          >
+          <i class="fa-solid fa-plus mt-2 ps-2 pe-3"></i>
+        </div>
+      </div>
+      <!-- sub-nav section -->
 
       <!-- sidebar  -->
       <div
@@ -69,7 +83,7 @@
           </div>
           <div class="menu-item mt-2">
             <i class="fa-solid fa-calendar-days"></i>
-            <a href="">ထွက်ဂဏန်းများ</a>
+            <a href="history.html">ထွက်ဂဏန်းများ</a>
           </div>
           <div class="menu-item mt-2">
             <i class="fa-solid fa-landmark"></i>
@@ -88,53 +102,90 @@
       <!-- sidebar -->
 
       <!-- content section -->
-      <div class="row" style="margin-top: 100px">
-        <div
-          class="col-lg-5 mx-auto"
-          style="background-color: #2c74b3; height: 100vh"
-        >
-          <div class="user-profile pt-2 d-flex justify-content-center">
-            <img src="./assets/images/team-1.jpg" alt="" />
-            <div class="ms-3 mt-4">
-              <p>UserName <br /><span>လက်ကျန်ငွေ 0 ကျပ်</span></p>
+      <div class="row">
+        <div class="col-lg-5 mx-auto">
+          <div style="height: 100vh">
+            <h6 class="m-3 text-center text-white">ထိုးမည့်ဂဏန်းများ</h6>
+            <table class="table text-white text-center">
+              <tr>
+                <th>စဉ်</th>
+                <th>ဂဏန်း</th>
+                <th>ငွေပမာဏ</th>
+                <th>ပြင် / ဖျက်</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>123</td>
+                <td>100</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><i class="fa-regular fa-pen-to-square mx-3"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-regular fa-trash-can text-danger"></i
+                    ></a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>223</td>
+                <td>100</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><i class="fa-regular fa-pen-to-square mx-3"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-regular fa-trash-can text-danger"></i
+                    ></a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>223</td>
+                <td>100</td>
+                <td>
+                  <div class="d-flex justify-content-center">
+                    <a href=""
+                      ><i class="fa-regular fa-pen-to-square mx-3"></i
+                    ></a>
+                    <a href=""
+                      ><i class="fa-regular fa-trash-can text-danger"></i
+                    ></a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <div class="d-flex justify-content-around">
+              <p>စုစုပေါင်းငွေပမာဏ</p>
+              <p>200 ကျပ်</p>
             </div>
-          </div>
-          <div class="wallet-section mt-4">
-            <div>
-              <a href="balance.html">
-                <i class="fa-solid fa-money-bill-wheat"></i>
-                <span class="d-block text-center">ငွေဖြည့်</span>
-              </a>
+            <hr />
+            <div
+              class="text-center"
+              style="background: #2c74b3; border-radius: 5px; padding: 5px"
+            >
+              <p>လက်ကျန်ငွေ</p>
+              <p>0 ကျပ်</p>
             </div>
-            <div>
-              <a href="withdraw.html">
-                <i class="fa-solid fa-money-bill-trend-up"></i>
-                <span class="d-block text-center">ငွေထုတ်</span>
-              </a>
+            <div class="row py-5">
+              <div class="col-6 text-center">
+              <a href="threed-play.html" class="btn btn-remove">ပြန်ရွေးမည်</a>
+              </div>
+              <div class="col-6 text-center">
+              <a href="threed-play.html" class="btn play-btn">ထိုးမည်</a>
+              </div>         
+              
             </div>
-            <div>
-              <i class="fa-solid fa-file-pen"></i>
-              <span class="d-block text-center">မှတ်တမ်း</span>
-            </div>
-          </div>
-          <div class="card wallet-card mt-3">
-            <h5 class="text-center">ငွေဖြည့်လိုပါက</h5>
-            <div>
-              <p>၁။ "ငွေဖြည့်" ကို နှိပ်ပါ။</p>
-              <p>
-                ၂။ KBZ Pay, Wave Pay, CB Pay နှင့် AYA Pay တို့မှ
-                မိမိငွေဖြည့်မည့် ဘဏ်ကို ရွေးပါ။
-              </p>
-              <p>
-                ၃။ သက်ဆိုင်ရာ Pay ဖြင့် ငွေသွင်းနိုင်သော App မှအကောင့်များ
-                ပေါ်လာပါလိမ့်မည်။
-              </p>
             </div>
           </div>
         </div>
-
-        <div class="container"></div>
       </div>
+
       <!-- content section -->
 
       <!-- footer section -->
@@ -172,7 +223,7 @@
                 <!-- <div class="footer-circle"> -->
                 <i class="fa-solid fa-phone d-block normal-icon"></i>
                 <!-- </div> -->
-                <span class="d-block">Contact</span>
+                <span class="d-block"> Service </span>
               </a>
             </div>
             <div class="text-center">

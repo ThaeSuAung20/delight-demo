@@ -101,10 +101,31 @@
       <div class="row" style="height: 100vh">
         <div class="col-lg-5 mx-auto" style="background: #2c74b3">
           <div class="d-flex justify-content-around mt-3">
-            <button class="btn btn-choose">12:00AM</button>
-            <button class="btn btn-choose">အမြန်ရွေး</button>
-            <a href="twoD.html" class="btn btn-choose">Back</a>
+            <div>
+              <button
+                class="btn btn-choose dropdown-toggle d-block"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                12:00 AM
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">12:00 AM</a></li>
+
+                <li><a class="dropdown-item" href="#">4:00 PM</a></li>
+              </ul>
+              <button class="btn btn-choose mt-2 d-block">အမြန်ရွေး</button>
+            </div>
+            <div class="form-group play-amount">
+              <input type="text" placeholder="Amount" />
+            </div>
+
+            <!-- <button class="btn btn-choose d-block">အမြန်ရွေး</button>
+            <a href="twoD.html" class="btn btn-choose">Back</a> -->
           </div>
+          <a href="" style="text-decoration: none"
+            ><p class="text-white px-5 pt-3 fs-6">အရောင်ရှင်းလင်းချက်</p></a
+          >
 
           <div class="scroll-container mx-auto mt-4 mb-3">
             <div class="d-flex justify-content-around">
@@ -310,7 +331,7 @@
             </div>
           </div>
 
-          <div class="container" style="height: 100vh">
+          <!-- <div class="container" style="height: 100vh">
             <div class="row">
               <div class="col-lg-7 mx-auto play-amount">
                 <div class="form-group">
@@ -318,7 +339,7 @@
                     >ရွှေးချယ်ထားသောဂဏန်းများ</label
                   >
                   <input type="text" />
-                  <!-- <span>ရွှေးချယ်ထားသောဂဏန်းများ</span> -->
+                   <span>ရွှေးချယ်ထားသောဂဏန်းများ</span> 
                 </div>
                 <div class="form-group mt-4">
                   <label for="" class="form-label">စုစုပေါင်းထိုးကြေး</label>
@@ -335,7 +356,7 @@
                 ထိုးမည်
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- content section -->
@@ -371,11 +392,11 @@
               </a>
             </div>
             <div class="text-center">
-              <a href="profile.html" class="text-decoration-none footer-nav">
+              <a href="contact.html" class="text-decoration-none footer-nav">
                 <!-- <div class="footer-circle"> -->
-                <i class="fa-solid fa-user d-block normal-icon"></i>
+                <i class="fa-solid fa-phone d-block normal-icon"></i>
                 <!-- </div> -->
-                <span class="d-block">Profile</span>
+                <span class="d-block">Service</span>
               </a>
             </div>
             <div class="text-center">
