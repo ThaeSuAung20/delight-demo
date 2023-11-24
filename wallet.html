@@ -29,12 +29,8 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-5 fixed-top mx-auto nav-section" id="">
+        <div class="col-lg-4 fixed-top mx-auto nav-section" id="">
           <h5 class="">Delight 2D | 3D</h5>
-          <div class="mt-2">
-            <button class="btn btn-success">Register</button>
-            <button class="btn btn-primary">Login</button>
-          </div>
         </div>
       </div>
 
@@ -88,33 +84,51 @@
       <!-- sidebar -->
 
       <!-- content section -->
-      <div class="row" style="margin-top: 100px">
+      <div class="row" style="margin-top: 55px">
         <div
-          class="col-lg-5 mx-auto"
-          style="background-color: #2c74b3; height: 100vh"
+          class="col-lg-4 mx-auto"
+          style="background-color: #fff1d0; height: 100vh"
         >
-          <div class="user-profile pt-2 d-flex justify-content-center">
-            <img src="./assets/images/team-1.jpg" alt="" />
-            <div class="ms-3 mt-4">
-              <p>UserName <br /><span>လက်ကျန်ငွေ 0 ကျပ်</span></p>
+          <div class="card py-3 mt-4 shadow">
+            <div class="d-flex text-warning ps-3">
+              <img
+                src="https://www.svgrepo.com/download/295402/user-profile.svg"
+                width="50px"
+                height="50px"
+              />
+              <p class="d-block ms-2">
+                UserName <span class="d-block text-danger">0 Ks</span>
+              </p>
             </div>
-          </div>
-          <div class="wallet-section mt-4">
-            <div>
-              <a href="balance.html">
-                <i class="fa-solid fa-money-bill-wheat"></i>
-                <span class="d-block text-center">ငွေဖြည့်</span>
+            <hr style="height: 2px; color: #dd1c1a; margin: 10px" />
+            <div class="d-flex justify-content-around">
+              <a href="balance.html" class="">
+                <img
+                  src="./assets/images/loss.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+                />
+                <p class="text-success fw-bold">ငွေဖြည့်</p>
               </a>
-            </div>
-            <div>
-              <a href="withdraw.html">
-                <i class="fa-solid fa-money-bill-trend-up"></i>
-                <span class="d-block text-center">ငွေထုတ်</span>
+              <a href="withdraw.html" class="">
+                <img
+                  src="./assets/images/profit.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+                />
+                <p class="text-primary fw-bold">ငွေထုတ်</p>
               </a>
-            </div>
-            <div>
-              <i class="fa-solid fa-file-pen"></i>
-              <span class="d-block text-center">မှတ်တမ်း</span>
+              <a class="">
+                <img
+                  src="./assets/images/briefcase.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+                />
+                <p class="text-success fw-bold">မှတ်တမ်း</p>
+              </a>
             </div>
           </div>
           <div class="card wallet-card mt-3">
@@ -139,7 +153,7 @@
 
       <!-- footer section -->
       <footer class="row">
-        <div class="col-lg-5 mx-auto pt-1 pb-1 footer-section">
+        <div class="col-lg-4 mx-auto pt-1 pb-1 footer-section">
           <div class="d-flex justify-content-around mx-auto">
             <div class="text-center">
               <a href="wallet.html" class="text-decoration-none footer-nav">

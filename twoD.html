@@ -30,40 +30,11 @@
     <div class="container-fluid">
       <!-- nav section -->
       <div class="row">
-        <div class="col-lg-5 mx-auto fixed-top nav-section" id="">
+        <div class="col-lg-4 mx-auto fixed-top nav-section" id="">
           <h5 class="">Delight 2D | 3D</h5>
-          <div class="mt-2">
-            <button class="btn btn-success">Register</button>
-            <button class="btn btn-primary">Login</button>
-          </div>
         </div>
       </div>
       <!-- nav section -->
-
-      <!--sub-nav section  -->
-      <div class="row" style="margin-top: 80px">
-        <div class="col-lg-5 twod-nav py-4 mt-3 mb-2 mx-auto">
-          <div class="d-flex justify-content-between text-dark px-3">
-            <div class="">
-              <a href="2d-winner.html">
-                <i class="fa-solid fa-clock-rotate-left d-block"></i>
-                <span class="d-block">မှတ်တမ်း</span>
-              </a>
-            </div>
-            <div class="">
-              <a href="2d-winner.html">
-                <i class="fa-solid fa-trophy"></i>
-                <span class="d-block">ကံထူးရှင်များ</span>
-              </a>
-            </div>
-            <div class="">
-              <i class="fa-solid fa-calendar-days d-block"></i>
-              <span class="d-block">ပိတ်ရက်</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- sub-nav section -->
 
       <!-- sidebar  -->
       <div
@@ -115,77 +86,71 @@
       <!-- sidebar -->
 
       <!-- content section -->
-      <div class="row">
+      <div class="row" style="height: 100vh">
         <div
-          class="col-lg-5 mx-auto"
-          style="
-            background: #2c74b3;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-          "
+          class="col-lg-4 mx-auto"
+          style="background: #fff1d0; margin-top: 50px"
         >
-          <div class="d-flex justify-content-between">
-            <div>
-              <div class="d-flex">
-                <i class="fa-solid fa-wallet fs-2 d-block normal-icon"></i>
-                <div>
-                  <p class="mt-2 px-2">
-                    လက်ကျန်ငွေ <br /><span>0.00 Kyat</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-2 d-flex text-center">
-              <i class="fa-solid fa-hourglass-start fs-2 pe-2"></i>
-              <div>
-                <span> ပိတ်ရန်ကျန်ချိန်</span>
-                <p>2023-11-16 <br /><span>02:30:00PM</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="result-section pb-3">
+          <div class="result-section mt- pb-3 mx-auto">
             <span>73</span>
-            <p>Updated: 09-11-2023 4:30:00 PM</p>
-            <a
-              href=""
-              class="btn twod-play-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#modalForm"
-              >ထိုးမည်</a
-            >
           </div>
-          <div class="result-card">
-            <!-- <div> -->
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
+          <p class="text-center mt-1" style="color: #dd1c1a">
+            Updated: 09-11-2023 4:30:00 PM
+          </p>
+          <hr style="height: 2px; color: #dd1c1a; margin: 10px" />
+          <div class="card py-3 mb-3 shadow">
+            <div class="d-flex justify-content-around text-center">
+              <div class="">
+                <img
+                  src="./assets/images/order-history.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+                />
+                <p class="text-primary fw-bold">မှတ်တမ်း</p>
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/winner.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+                />
+                <p class="text-warning fw-bold">ကံထူးရှင်များ</p>
+              </div>
+              <div class="">
+                <img
+                  src="./assets/images/calendar.png"
+                  width="50px"
+                  height="50px"
+                  alt=""
+                />
+                <p class="text-dark fw-bold">ပိတ်ရက်</p>
+              </div>
             </div>
-            <hr />
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
+          </div>
+          <hr style="height: 2px; color: #dd1c1a; margin: 10px" />
+
+          <div class="card shadow result-card px-3 py-3">
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">10:30 AM</p>
+              <a href="twod-play.html" class="btn twod-play-btn">ထိုးမည်</a>
             </div>
-            <hr />
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
+            <hr style="height: 2px; color: #dd1c1a; margin: 10px" />
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">12:00 PM</p>
+              <a href="twod-play.html" class="btn twod-play-btn">ထိုးမည်</a>
             </div>
-            <hr />
-            <p class="text-center mt-2 pt-2">10:30 AM</p>
-            <div class="d-flex justify-content-between text-center">
-              <p>Set <span class="d-block">1,396.03</span></p>
-              <p>Value <span class="d-block">1,396.03</span></p>
-              <p>2D <span class="d-block">1,396.03</span></p>
+            <hr style="height: 2px; color: #dd1c1a; margin: 10px" />
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">02:30 PM</p>
+              <a href="twod-play.html" class="btn twod-play-btn">ထိုးမည်</a>
             </div>
-            <hr />
-            <!-- </div> -->
+            <hr style="height: 2px; color: #dd1c1a; margin: 10px" />
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">04:00 PM</p>
+              <a href="twod-play.html" class="btn twod-play-btn">ထိုးမည်</a>
+            </div>
           </div>
         </div>
       </div>
@@ -195,7 +160,7 @@
 
       <!-- footer section -->
       <footer class="row">
-        <div class="col-lg-5 mx-auto pt-1 pb-1 footer-section">
+        <div class="col-lg-4 mx-auto pt-1 pb-1 footer-section">
           <div class="d-flex justify-content-around mx-auto">
             <div class="text-center">
               <a href="wallet.html" class="text-decoration-none footer-nav">
