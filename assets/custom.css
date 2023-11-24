@@ -23,7 +23,7 @@ body {
   font-family: 'Abril Fatface', serif;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #dd1c1a;
+  color: #fff1d0;
 }
 
 @media (max-width: 370px) {
@@ -81,16 +81,16 @@ body {
 
 /* sidebar styles */
 .offcanvas {
-  background-color: var(--container-color);
-  color: #fff8ea;
+  background-color: #fff1d0;
+  color: #dd1c1a;
 }
 .offcanvas h5 {
-  font-family: 'Alumni Sans Inline One', sans-serif;
+  font-family: 'Abril Fatface', serif;
   font-size: 2.5em;
 }
 
 .offcanvas .btn-close {
-  background-color: #fff8ea;
+  background-color: #dd1c1a;
 }
 .user-profile {
   display: flex;
@@ -106,8 +106,8 @@ body {
   border-radius: 5px;
   height: 60px;
   padding: 10px;
-  border: 1px solid #ed5ab3;
-  box-shadow: #ed5ab3 0px 3px 8px;
+  border: 1px solid #086788;
+  box-shadow: #086788 0px 3px 8px;
 }
 
 .menu-item i {
@@ -117,7 +117,7 @@ body {
 
 .menu-item a {
   text-decoration: none;
-  color: #fff8ea;
+  color: #dd1c1a;
 }
 /* sidebar styles */
 
@@ -587,7 +587,7 @@ body {
   margin-top: -20px;
   font-size: 50px;
   /* background: #fff; */
-  color: #fff0ce;
+  color: #fff;
 }
 .phone p {
   font-size: 20px;
