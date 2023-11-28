@@ -255,6 +255,8 @@ body {
 /* twoD-play styles */
 .btn-choose {
   border: 2px solid #dd1c1a;
+  width: 100px;
+
   color: #dd1c1a;
 }
 .btn-choose:hover {
