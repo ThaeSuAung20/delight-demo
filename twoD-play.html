@@ -106,7 +106,13 @@
               <button class="btn btn-choose mt-2 d-block">R မည်</button>
             </div>
             <div>
-              <button class="btn btn-choose mt-2 d-block">အမြန်ရွေး</button>
+              <button
+                class="btn btn-choose mt-2 d-block"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                အမြန်ရွေး
+              </button>
             </div>
             <div class="form-group mt-2 play-amount">
               <input type="text" placeholder="Amount" />
@@ -340,6 +346,53 @@
       </div>
       <!-- footer section -->
     </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              အမြန်ရွေးရန်
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row ms-1">
+              <div class="quick-box col-2">0</div>
+              <div class="quick-box col-2">1</div>
+              <div class="quick-box col-2">2</div>
+              <div class="quick-box col-2">3</div>
+              <div class="quick-box col-2">4</div>
+              <div class="quick-box col-2">5</div>
+              <div class="quick-box col-2">6</div>
+              <div class="quick-box col-2">7</div>
+              <div class="quick-box col-2">8</div>
+              <div class="quick-box col-2">9</div>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-around">
+              <div class="quick-box1">မမ</div>
+              <div class="quick-box1">စုံစုံ</div>
+              <div class="quick-box1">မမ အပူး</div>
+              <div class="quick-box1">စုံစုံ အပူး</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- model -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

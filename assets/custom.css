@@ -327,6 +327,33 @@ body {
 .play-btn:hover {
   color: #0088cc;
 }
+
+.quick-box {
+  background: #dd1c1a;
+  /* width: auto; */
+  padding: 10px 20px;
+  margin: 4px 7px;
+  border: 2px solid #086788;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: #fff1d0;
+}
+.quick-box1 {
+  background: #dd1c1a;
+  width: 90px;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 4px 7px;
+  border: 2px solid #086788;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  color: #fff1d0;
+}
 /* towD-play styles */
 
 /* wallet styles */
@@ -599,13 +626,16 @@ body {
 
 /* history styles */
 .history-card {
-  background: var(--bg-color);
-  color: #fff;
-  border: 2px solid #ed5ab3;
+  background: linear-gradient(
+    45deg,
+    hsla(18, 98%, 65%, 1) 40%,
+    hsla(33, 100%, 72%, 1) 100%
+  );
+  color: #fff1d0;
 }
 .twod {
-  background: var(--container-color);
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 .twod-header {
   background: var(--text-color);
@@ -624,9 +654,8 @@ body {
   color: #fff;
   border: 2px solid #ed5ab3;
 }
-.active {
-  box-shadow: #44042a 0px 30px 60px -12px inset,
-    #c41a80 0px 18px 36px -18px inset;
+.active1 {
+  border: 3px dashed #dd1c1a;
 }
 /* history styles */
 
