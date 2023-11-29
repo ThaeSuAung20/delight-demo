@@ -752,3 +752,53 @@ footer i {
 } */
 
 /* footer styles */
+
+/* register styles*/
+
+/* register styles*/
+
+/* login style */
+.input-name {
+  margin-left: 15px;
+
+  position: relative;
+}
+
+input {
+  border: 1px solid #fff;
+  padding-left: 60px;
+  outline: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px !important;
+  /* margin-right: 20px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+::placeholder {
+  color: gray;
+  opacity: 1;
+}
+
+.input-name .material-icons {
+  color: #086788;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.login-text {
+  color: #086788;
+}
+.login-btn {
+  background: #086788;
+  color: #fff1d0;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 50px !important;
+  height: 50px;
+}
+.login-btn:hover {
+  background: #086788;
+  color: #fff1d0;
+}
+/* login style */
